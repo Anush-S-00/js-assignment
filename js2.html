@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First JavaScript Code</title> 
+</head>
+<body>
+<h1>JS code to print Current Date</h1>
+
+<p id="demo"></p>
+
+<p id="demo1"></p>
+
+<script type="text/javascript">
+	var d = new Date();  //creating constructor and object 
+	
+	document.getElementById('demo').innerHTML = "The Current Date is" +"&nbsp&nbsp" + d.getDate() + "/" + d.getMonth() + "/" + d.getFullYear();   //getDate - returns current date, getMonth - returns current Month, getFullYear - returns current Year format  - dd/mm/yy
+
+	var d1 = new Date();
+
+	document.getElementById('demo1').innerHTML = "The Current Date is" +"&nbsp&nbsp" + d1.getMonth() + "/" + d.getDate() + "/" + d1.getFullYear();   //format - mm/dd/yy
+
+</script>
+
+</body>
+</html>
