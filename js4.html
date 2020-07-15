@@ -1,33 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>JS Code</title>
+	<title>Console Functions</title>
 </head>
 <body>
-	<p id="demo"></p>
-	<p id="demo1"></p>
-	 <button onclick="myFun()">Try it</button>
-
-<script type="text/javascript">
-var currentdate = new Date(); 
-
-                document.getElementById('demo').innerHTML = "The current time is " +currentdate.getHours() + "&nbsp" + "pm:"   + currentdate.getHours() + ":&nbsp" + currentdate.getMinutes() ;
-
-	function myFun(){
-  var d = new Date();
-  var weekday = new Array(7);
-  weekday[0] = "Sunday";
-  weekday[1] = "Monday";
-  weekday[2] = "Tuesday";
-  weekday[3] = "Wednesday";
-  weekday[4] = "Thursday";
-  weekday[5] = "Friday";
-  weekday[6] = "Saturday";
-
-  var n = weekday[d.getDay()];
-  document.getElementById("demo1").innerHTML ="Today is :" + n;
-};
-	
-</script>
+<p style="font-size: 35px;">Various console function in JS</p><hr>
+<h1>Console Clear()</h1>
+<p>The console.clear() will clear the console and displays the message as&nbsp&nbsp<b>console was cleared</b></p>
+<p>syntax is &nbsp <strong>console.clear();</strong></p>
+<hr>
+<h1>Console Error</h1>
+<p>The console.error() method writes an <b>error message to the console</b></p>
+<p>syntax is &nbsp<strong>console.error()</strong></p>
+<hr>
+<h1>Console Group</h1>
+<p>The console.group() method indicates the start of a <strong>message group.</strong></p>
+<p>Syntax is <b>console.group()</b></p>
+<hr>
+<h1>Console Time</h1>
+<p>The <b> console time </b> function method starts a timer in the console view</p>
+<p>Syntax is <b>console.time()</b></p>
+<hr>
 </body>
 </html>
